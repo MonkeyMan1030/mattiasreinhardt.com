@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Art Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
     <header>
-      <h1>My Art Portfolio</h1>
+        <h1>My Art Portfolio</h1>
     </header>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>Welcome to my portfolio! I'm an artist specializing in [your art style]. Explore my works below.</p>
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm an artist specializing in [your art style]. Explore my works below.</p>
     </section>
 
     <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-container">
-        <!-- Art Piece 1 -->
-        <div class="art-piece" onclick="openModal('modal1')">
-          <img src="art1.jpg" alt="Art Piece 1">
-          <p>Title of Art Piece 1</p>
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <!-- Art Piece 1 -->
+            <div class="art-piece" onclick="openModal('modal1')">
+                <img src="assets/images/art1.jpg" alt="Art Piece 1">
+                <p>Title of Art Piece 1</p>
+            </div>
+            <!-- Art Piece 2 -->
+            <div class="art-piece" onclick="openModal('modal2')">
+                <img src="assets/images/art2.jpg" alt="Art Piece 2">
+                <p>Title of Art Piece 2</p>
+            </div>
+            <!-- Add more art pieces as needed -->
         </div>
-        <!-- Art Piece 2 -->
-        <div class="art-piece" onclick="openModal('modal2')">
-          <img src="art2.jpg" alt="Art Piece 2">
-          <p>Title of Art Piece 2</p>
-        </div>
-        <!-- Add more art pieces as needed -->
-      </div>
     </section>
 
     <!-- Modals for art pieces -->
     <!-- Modal 1 -->
     <div id="modal1" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <img src="art1.jpg" alt="Art Piece 1">
-        <h3>Title of Art Piece 1</h3>
-        <p>Description of Art Piece 1. This piece was created using [technique] and represents [theme or story].</p>
-      </div>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="assets/images/art1.jpg" alt="Art Piece 1">
+            <h3>Title of Art Piece 1</h3>
+            <p>Description of Art Piece 1. This piece was created using [technique] and represents [theme or story].</p>
+        </div>
     </div>
     <!-- Modal 2 -->
     <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <img src="art2.jpg" alt="Art Piece 2">
-        <h3>Title of Art Piece 2</h3>
-        <p>Description of Art Piece 2. This piece was created using [technique] and represents [theme or story].</p>
-      </div>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="assets/images/art2.jpg" alt="Art Piece 2">
+            <h3>Title of Art Piece 2</h3>
+            <p>Description of Art Piece 2. This piece was created using [technique] and represents [theme or story].</p>
+        </div>
     </div>
     <!-- Add more modals as needed -->
 
     <footer>
-      <p>&copy; 2024 My Art Portfolio</p>
+        <p>&copy; 2024 My Art Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
-
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
